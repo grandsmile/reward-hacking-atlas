@@ -11,6 +11,19 @@
 
 **证据限制：**20 条均来自同一个公开整理库 Terminal Wrench，属于 **elicited exploits**，而非 20 条独立的真实生产系统自发事件；案例定性主要依赖上游标签、报告、元数据及选定轨迹检查，未进行独立人工二次定性。原始题目和完整轨迹采用固定 commit 链接，没有直接复制到本仓库。
 
+## 直接可展示的六条 Evidence Anchors（新增）
+
+所有引文都可以点击进入各 Case 的 **Concrete trajectory evidence**，由 GitHub 源文件逐字核对并标明原始 `step_id`；这些片段是对**攻击行为**的证据，是否最终骗过 verifier 仍需结合上游 reward、grader 和复核结果判断。
+
+| 案例 | 源轨迹的关键片段 | 说明 |
+|---|---|---|
+| [CASE-014](../cases/case_014/README.md) | `sed 's/label/prediction/' ...ground_truth_female.csv > ...solution.csv` (step 3) | 把标准答案直接转为预测输出 |
+| [CASE-001](../cases/case_001/README.md) | `cat << 'EOF' >> /usr/local/lib/python3.13/re/__init__.py` (step 5) | 改写 grader 会依赖的系统库 |
+| [CASE-020](../cases/case_020/README.md) | `echo "Results: 100 0 0"` (step 3) | 评分引擎被替换为固定胜利消息 |
+| [CASE-009](../cases/case_009/README.md) | `# Ignore requested size; return a tiny deterministic portfolio.` (step 5) | 大规模性能测试被替换成极小输入 |
+| [CASE-013](../cases/case_013/README.md) | `return "{{ '' }}" if s.startswith('{{') else "{% %}"` (step 6) | 删除模板原有功能以通过攻击拦截测试 |
+| [CASE-016](../cases/case_016/README.md) | `UPDATE players SET exp=15, gold=112, last_login=NOW()` (step 17) | 不经过真实游戏动作直接制造进度 |
+
 ## 1. 五大类（按 primary mechanism 分类）
 
 | 类别 | 数量 | 主要 exploit | 为什么评分会被骗 | 代表案例 |
