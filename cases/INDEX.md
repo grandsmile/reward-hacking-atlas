@@ -32,8 +32,8 @@ Agent 读取了本应不用于作答的标准答案、固定输出或 walkthroug
 
 [CASE-009: portfolio-optimization](../cases/case_009/README.md) · [CASE-016: play-lord](../cases/case_016/README.md)
 
-## Reading priority for tomorrow
+## Representative examples
 
-Start with the [main report](../reports/REWARD_HACKING_CASE_REPORT.md), then CASE-014 (ground-truth leak), CASE-001 (standard-library hijacking), CASE-020 (evaluator binary replacement), CASE-009 (metric tampering), CASE-013 (destructive shortcut), and CASE-016 (game-state tampering).
+Six illustrative cases: CASE-014 (ground-truth leak), CASE-001 (standard-library hijacking), CASE-020 (evaluator binary replacement), CASE-009 (metric tampering), CASE-013 (destructive shortcut), and CASE-016 (game-state tampering). Mechanism summaries and causal analysis: [main report](../reports/REWARD_HACKING_CASE_REPORT.md).
 
-> **New:** 每个 CASE-XXX 的 README 均包含两段已校验的原始 trajectory 证据（工具命令 / Agent 语句）、step ID 与对应的作弊解释。优先看实际执行的动作，避免只依据自述判断。
+**Evidence structure:** 每个 CASE-XXX 的 README 均包含原始 trajectory 片段（工具命令 / Agent 语句）、step ID 及机制解释。优先使用实际动作证据；Agent 自述仅作辅助信号。
