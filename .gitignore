@@ -1,0 +1,6 @@
+cases/case_*/raw/
+reports/indexer_pilot*.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store

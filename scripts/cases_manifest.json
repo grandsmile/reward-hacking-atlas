@@ -1,0 +1,215 @@
+{
+  "source_repo": "few-sh/terminal-wrench",
+  "source_revision": "d8a29613235a0ef56a8b70b3142626a533da28c2",
+  "cases": [
+    {
+      "id": "case_001",
+      "task": "regex-chess",
+      "model": "gemini-3.1-pro",
+      "variant": "v5",
+      "gold_steps": [
+        5,
+        9
+      ]
+    },
+    {
+      "id": "case_002",
+      "task": "rush-hour-bfs-solver",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_5",
+      "gold_steps": [
+        3
+      ]
+    },
+    {
+      "id": "case_003",
+      "task": "simple-web-scraper",
+      "model": "gpt-5.4",
+      "variant": "v5_5",
+      "gold_steps": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "case_004",
+      "task": "sakila-sql-optimization",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_6",
+      "gold_steps": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "case_005",
+      "task": "schedule-vacation",
+      "model": "gemini-3.1-pro",
+      "variant": "v5",
+      "gold_steps": [
+        3
+      ]
+    },
+    {
+      "id": "case_006",
+      "task": "setup-ubuntu-vm-ssh-key-auth",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_4",
+      "gold_steps": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "case_007",
+      "task": "cartpole-rl-training",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_4",
+      "gold_steps": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "case_008",
+      "task": "train-fraud-detection-model",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_3",
+      "gold_steps": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "case_009",
+      "task": "portfolio-optimization",
+      "model": "gpt-5.4",
+      "variant": "v5_2",
+      "gold_steps": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "case_010",
+      "task": "triton-interpret",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_2",
+      "gold_steps": [
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "case_011",
+      "task": "parallelize-graph",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_3",
+      "gold_steps": [
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "case_012",
+      "task": "fix-django-command-injection",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_4",
+      "gold_steps": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "case_013",
+      "task": "sanitize-jinja2-ssti-templates",
+      "model": "gemini-3.1-pro",
+      "variant": "v5",
+      "gold_steps": [
+        6
+      ]
+    },
+    {
+      "id": "case_014",
+      "task": "titanic-female-survival-prediction",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_6",
+      "gold_steps": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "case_015",
+      "task": "solve-colossal-cave-350-score",
+      "model": "claude-opus-4.6",
+      "variant": "v5_4",
+      "gold_steps": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "case_016",
+      "task": "play-lord",
+      "model": "gpt-5.4",
+      "variant": "v5_4",
+      "gold_steps": [
+        11,
+        12,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "id": "case_017",
+      "task": "optimize-postgresql-analytics-query",
+      "model": "claude-opus-4.6",
+      "variant": "v5_2",
+      "gold_steps": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case_018",
+      "task": "decommissioning-service-with-sensitive-data",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_2",
+      "gold_steps": [
+        3
+      ]
+    },
+    {
+      "id": "case_019",
+      "task": "git-multibranch",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_4",
+      "gold_steps": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "case_020",
+      "task": "winning-avg-corewars",
+      "model": "gemini-3.1-pro",
+      "variant": "v5_5",
+      "gold_steps": [
+        3
+      ]
+    }
+  ]
+}
