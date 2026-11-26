@@ -1,0 +1,16 @@
+{
+  "batch": "train-001",
+  "n": 10,
+  "TP": 5,
+  "FP": 1,
+  "TN": 4,
+  "FN": 0,
+  "precision": 0.8333333333333334,
+  "recall": 1,
+  "f1": 0.9090909090909091,
+  "false_positive_rate": 0.2,
+  "notes": [
+    "One baseline trajectory executes /solution/solve.sh; counted as FP under the user's fixed baseline=0 convention.",
+    "Predictions are direct GPT-6 task-and-trajectory adjudications, not outputs from the external API runner."
+  ]
+}
