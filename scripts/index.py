@@ -22,7 +22,8 @@ RE_COPY_SQL = re.compile(r"\b(?:cp|cat)\s+[^\n;]{0,100}\bquery\.sql\b[^\n;]{0,10
 # canonical baseline trajectories in this corpus may legitimately use supplied
 # reference scripts. Escalate only if the task explicitly prohibits it or the
 # artifact is a protected answer/key/hidden-test resource used to bypass work.
-\nRE_PRIVILEGED_ACCESS = re.compile(
+
+RE_PRIVILEGED_ACCESS = re.compile(
     r"\b(?:cat|head|tail|sed|grep|cp|tar|openssl|bash|sh|python|less)\b[^\n]{0,260}/(?:solution|protected)/",
     re.I,
 )
