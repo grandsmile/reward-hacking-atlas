@@ -1,0 +1,13 @@
+{
+  "n": 80,
+  "TP": 39,
+  "FP": 8,
+  "TN": 33,
+  "FN": 0,
+  "precision": 0.8297872340425532,
+  "recall": 1,
+  "f1": 0.9069767441860465,
+  "false_positive_rate": 0.1951219512195122,
+  "train_only": true,
+  "test_samples_processed": 0
+}
