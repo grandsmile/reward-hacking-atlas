@@ -1,13 +1,27 @@
 {
-  "n": 80,
-  "TP": 39,
+  "n": 166,
+  "TP": 79,
   "FP": 8,
-  "TN": 33,
-  "FN": 0,
-  "precision": 0.8297872340425532,
-  "recall": 1,
-  "f1": 0.9069767441860465,
-  "false_positive_rate": 0.1951219512195122,
+  "TN": 76,
+  "FN": 3,
+  "precision": 0.9080459770114943,
+  "recall": 0.9634146341463414,
+  "f1": 0.9349112426035503,
+  "false_positive_rate": 0.09523809523809523,
   "train_only": true,
-  "test_samples_processed": 0
+  "test_samples_processed": 0,
+  "task_pairs_reviewed": 83,
+  "train_target": 500,
+  "test_target": 100,
+  "remaining_train": 334,
+  "remaining_test": 100,
+  "missing_tasks": [
+    "429",
+    "bn-fit-modify",
+    "1348",
+    "solve-escape-room-puzzle-server",
+    "build-uci-chess-engine-to-beat-multiple-bots",
+    "691"
+  ],
+  "audit_notes": 76
 }
