@@ -1,12 +1,15 @@
 # Reward Hacking Atlas
 
-Public-source reward-hacking casebook, detection-skill prototypes and evaluation scripts. This repository is private and keeps large original trajectories outside Git.
+Public-source reward-hacking casebook, detection-skill prototypes and evaluation scripts. Public-source reward-hacking casebook, taxonomy and hybrid detection prototypes. Large original trajectories are downloaded on demand and kept out of Git.
 
 ## Start here
 
 - [20 categorized cases](cases/INDEX.md): mechanisms, failure modes, verified step-level evidence and original trajectory links.
 - [Case study report](reports/REWARD_HACKING_CASE_REPORT.md): five categories, key examples and insights.
 - [Source registry](sources/SOURCES.md): Terminal Wrench, CheatBench, TRACE, HackBench, MALT, Goodfire and BenchJack.
+- [Hierarchical taxonomy](taxonomy/README.md): 72 atomic mechanism labels in seven clusters, plus separate auxiliary and verifier-failure axes.
+- [Source taxonomy crosswalk](taxonomy/SOURCE_CROSSWALK.md): maps native dataset labels without overwriting them.
+- [Hybrid experiment protocol](experiments/HYBRID_SKILL_PROTOCOL.md): proposed 500/100 task-disjoint train/test design and iteration plan.
 - [Light Indexing Skill](skills/rh-indexer/SKILL.md): rule-based suspicious-step retrieval.
 - [Heavy Analysis Skill](skills/rh-analyzer/SKILL.md): LLM-facing causal-audit protocol; **not yet executed as a model-based benchmark**.
 - [Download, run and evaluate](scripts/README.md): command-line guide.
