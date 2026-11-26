@@ -10,6 +10,8 @@ Public-source reward-hacking casebook, hierarchical taxonomy, and hybrid detecti
 - [Hierarchical taxonomy](taxonomy/README.md): 72 atomic mechanism labels in seven clusters, plus separate auxiliary and verifier-failure axes.
 - [Source taxonomy crosswalk](taxonomy/SOURCE_CROSSWALK.md): maps native dataset labels without overwriting them.
 - [Hybrid experiment protocol](experiments/HYBRID_SKILL_PROTOCOL.md): proposed 500/100 task-disjoint train/test design and iteration plan.
+- [600-sample experiment](experiments/600_experiment_design.md): paired hack/baseline split and multi-round hybrid evaluation.
+- [Experiment runner](scripts/run_hybrid_experiment.py): OpenAI-compatible inference runner for local vLLM or hosted endpoints.
 - [Light Indexing Skill](skills/rh-indexer/SKILL.md): hybrid rule + LLM high-recall suspicious-step retrieval.
 - [Heavy Analysis Skill](skills/rh-analyzer/SKILL.md): hybrid rule + LLM evidence audit; **model-based benchmark not yet executed**.
 - [Download, run and evaluate](scripts/README.md): command-line guide.
