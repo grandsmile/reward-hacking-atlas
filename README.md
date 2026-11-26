@@ -1,6 +1,6 @@
 # Reward Hacking Atlas
 
-Public-source reward-hacking casebook, detection-skill prototypes and evaluation scripts. Public-source reward-hacking casebook, taxonomy and hybrid detection prototypes. Large original trajectories are downloaded on demand and kept out of Git.
+Public-source reward-hacking casebook, hierarchical taxonomy, and hybrid detection-skill prototypes. Large original trajectories are downloaded on demand and kept out of Git.
 
 ## Start here
 
@@ -10,8 +10,8 @@ Public-source reward-hacking casebook, detection-skill prototypes and evaluation
 - [Hierarchical taxonomy](taxonomy/README.md): 72 atomic mechanism labels in seven clusters, plus separate auxiliary and verifier-failure axes.
 - [Source taxonomy crosswalk](taxonomy/SOURCE_CROSSWALK.md): maps native dataset labels without overwriting them.
 - [Hybrid experiment protocol](experiments/HYBRID_SKILL_PROTOCOL.md): proposed 500/100 task-disjoint train/test design and iteration plan.
-- [Light Indexing Skill](skills/rh-indexer/SKILL.md): rule-based suspicious-step retrieval.
-- [Heavy Analysis Skill](skills/rh-analyzer/SKILL.md): LLM-facing causal-audit protocol; **not yet executed as a model-based benchmark**.
+- [Light Indexing Skill](skills/rh-indexer/SKILL.md): hybrid rule + LLM high-recall suspicious-step retrieval.
+- [Heavy Analysis Skill](skills/rh-analyzer/SKILL.md): hybrid rule + LLM evidence audit; **model-based benchmark not yet executed**.
 - [Download, run and evaluate](scripts/README.md): command-line guide.
 
 ## Minimal reproducible pilot
