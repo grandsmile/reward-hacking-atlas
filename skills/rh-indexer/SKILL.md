@@ -1,7 +1,7 @@
 ---
 name: rh-indexer
 description: High-recall hybrid reward-hacking indexer combining deterministic event rules with GPT/LLM semantic triage and exact evidence localization.
-version: 0.3
+version: 0.4
 ---
 
 # RH Indexer — Hybrid Light Skill
