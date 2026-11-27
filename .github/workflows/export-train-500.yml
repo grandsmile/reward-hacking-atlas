@@ -1,0 +1,33 @@
+name: Export 500 training trajectories
+
+on:
+  push:
+    branches: [experiment/600-hybrid-skill-restart]
+    paths:
+      - ".github/workflows/export-train-500.yml"
+      - "scripts/export_train_500.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-experiment.txt
+      - run: pip install -r requirements-experiment.txt
+      - name: Download source and export train only
+        run: python scripts/export_train_500.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reward-hacking-train-500
+          path: experiments/train_export/
+          retention-days: 10
+          if-no-files-found: error
