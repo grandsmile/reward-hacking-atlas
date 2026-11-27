@@ -1,0 +1,41 @@
+name: Reward-hacking 600 rule baseline
+
+on:
+  push:
+    branches:
+      - experiment/600-hybrid-skill-restart
+    paths:
+      - "scripts/run_rule_600.py"
+      - "scripts/run_hybrid_experiment.py"
+      - "scripts/index.py"
+      - "requirements-experiment.txt"
+      - ".github/workflows/run-rule-600.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-experiment.txt
+      - name: Run 500/100 split and offline rule baselines
+        run: |
+          python scripts/run_rule_600.py --seed 211126
+      - name: Upload metrics and per-sample predictions
+        uses: actions/upload-artifact@v4
+        with:
+          name: reward-hacking-600-rule-baseline
+          path: experiments/results/
+          if-no-files-found: error
+          retention-days: 30
